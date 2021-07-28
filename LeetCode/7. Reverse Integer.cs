@@ -24,36 +24,36 @@ namespace LeetCode {
 namespace LeetCodeTests {
     [TestFixture]
     public class ReverseIntegerTaskTest {
-        private ReverseIntegerTask task;
+        private ReverseIntegerTask _task;
 
         [SetUp]
         public void SetUp() {
-            task = new ReverseIntegerTask();
+            _task = new ReverseIntegerTask();
         }
         
         [Test]
         public void Example1() {
-            Assert.AreEqual(task.Reverse(123), 321);
+            Assert.AreEqual(_task.Reverse(123), 321);
         }
         
         [Test]
         public void Example2() {
-            Assert.AreEqual(task.Reverse(-123), -321);
+            Assert.AreEqual(_task.Reverse(-123), -321);
         }
         
         [Test]
         public void Example3() {
-            Assert.AreEqual(task.Reverse(120), 21);
+            Assert.AreEqual(_task.Reverse(120), 21);
         }
         
         [Test]
         public void Example4() {
-            Assert.AreEqual(task.Reverse(0), 0);
+            Assert.AreEqual(_task.Reverse(0), 0);
         }
         
         [Test]
         public void BigNumber() {
-            Assert.AreEqual(task.Reverse(int.MaxValue), 0);
+            Assert.AreEqual(_task.Reverse(int.MaxValue), 0);
         }
     }
 }
