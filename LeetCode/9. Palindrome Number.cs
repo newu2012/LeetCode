@@ -31,35 +31,35 @@ namespace LeetCodeTests {
 
         [Test]
         public void Example1() {
-            Assert.AreEqual(_task.IsPalindrome(121), true);
+            Assert.AreEqual(true, _task.IsPalindrome(121));
         }
         
         [Test]
         public void Example2() {
-            Assert.AreEqual(_task.IsPalindrome(-121), false, "From left to right, it reads -121. " +
-                                                           "From right to left, it becomes 121-. " +
-                                                           "Therefore it is not a palindrome.");
+            Assert.AreEqual(false, _task.IsPalindrome(-121), "From left to right, it reads -121. " +
+                                                              "From right to left, it becomes 121-. " +
+                                                              "Therefore it is not a palindrome.");
         }
         
         [Test]
         public void Example3() {
-            Assert.AreEqual(_task.IsPalindrome(10), false, "Reads 01 from right to left. " +
-                                                         "Therefore it is not a palindrome.");
+            Assert.AreEqual(false, _task.IsPalindrome(10), "Reads 01 from right to left. " +
+                                                            "Therefore it is not a palindrome.");
         }
         
         [Test]
         public void Example4() {
-            Assert.AreEqual(_task.IsPalindrome(-101), false);
+            Assert.AreEqual(false, _task.IsPalindrome(-101));
         }
 
         [Test]
         public void Test1() {
-            Assert.AreEqual(_task.IsPalindrome(12321), true);
+            Assert.AreEqual(true, _task.IsPalindrome(12321));
         }
         
         [Test]
         public void Test2() {
-            Assert.AreEqual(_task.IsPalindrome(123321), true);
+            Assert.AreEqual(true, _task.IsPalindrome(123321));
         }
     }
 }

@@ -33,27 +33,27 @@ namespace LeetCodeTests {
         
         [Test]
         public void Example1() {
-            Assert.AreEqual(_task.Reverse(123), 321);
+            Assert.AreEqual(321, _task.Reverse(123));
         }
         
         [Test]
         public void Example2() {
-            Assert.AreEqual(_task.Reverse(-123), -321);
+            Assert.AreEqual(-321, _task.Reverse(-123));
         }
         
         [Test]
         public void Example3() {
-            Assert.AreEqual(_task.Reverse(120), 21);
+            Assert.AreEqual(21, _task.Reverse(120));
         }
         
         [Test]
         public void Example4() {
-            Assert.AreEqual(_task.Reverse(0), 0);
+            Assert.AreEqual(0, _task.Reverse(0));
         }
         
         [Test]
         public void BigNumber() {
-            Assert.AreEqual(_task.Reverse(int.MaxValue), 0);
+            Assert.AreEqual(0, _task.Reverse(int.MaxValue));
         }
     }
 }

@@ -52,27 +52,27 @@ namespace LeetCodeTests {
 
         [Test]
         public void Example1() {
-            Assert.AreEqual(_task.RomanToInt("III"), 3);
+            Assert.AreEqual(3, _task.RomanToInt("III"));
         }
         
         [Test]
         public void Example2() {
-            Assert.AreEqual(_task.RomanToInt("IV"), 4);
+            Assert.AreEqual(4, _task.RomanToInt("IV"));
         }
         
         [Test]
         public void Example3() {
-            Assert.AreEqual(_task.RomanToInt("IX"), 9, "L = 50, V= 5, III = 3.");
+            Assert.AreEqual(9, _task.RomanToInt("IX"), "L = 50, V= 5, III = 3.");
         }
         
         [Test]
         public void Example4() {
-            Assert.AreEqual(_task.RomanToInt("LVIII"), 58);
+            Assert.AreEqual(58, _task.RomanToInt("LVIII"));
         }
         
         [Test]
         public void Example5() {
-            Assert.AreEqual(_task.RomanToInt("MCMXCIV"), 1994, "M = 1000, CM = 900, XC = 90 and IV = 4.");
+            Assert.AreEqual(1994, _task.RomanToInt("MCMXCIV"), "M = 1000, CM = 900, XC = 90 and IV = 4.");
         }
     }
 }
